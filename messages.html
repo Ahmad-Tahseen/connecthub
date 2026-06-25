@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Messages — ConnectHub</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+	<div class="nav-left">
+		<a href="index.html" class="logo-text">Connect<span>Hub</span></a>
+		<ul>
+			<li><a href="index.html" class="icon-btn" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+		</ul>
+	</div>
+	<div class="nav-right">
+      <div class="search-box">
+      	<i class="fa-solid fa-magnifying-glass"></i>
+      	<input type="text" placeholder="Search ConnectHub">
+	  </div>
+	  <a href="profile.html" class="nav-user-icon online"><img src="images/HH.jpg"></a>
+	</div>
+</nav>
+
+<div class="messages-shell">
+
+	<!-- CONVERSATION LIST -->
+	<aside class="conversation-list" id="conversationList">
+		<div class="conv-list-header">
+			<h3>Chats</h3>
+			<i class="fa-solid fa-pen-to-square"></i>
+		</div>
+
+		<div class="conv-item active" data-name="Hamza Saleh" data-avatar="images/HH-2.jpg">
+			<div class="online"><img src="images/HH-2.jpg"></div>
+			<div class="conv-text">
+				<strong>Hamza Saleh</strong>
+				<p>You: its been up and down but its doing fine now</p>
+			</div>
+			<span class="conv-time">2m</span>
+		</div>
+
+		<div class="conv-item" data-name="H1mmam Alaghbar" data-avatar="images/HH-3.jpg">
+			<div class="online"><img src="images/HH-3.jpg"></div>
+			<div class="conv-text">
+				<strong>H1mmam Alaghbar</strong>
+				<p>You: yeah sure man when?</p>
+			</div>
+			<span class="conv-time">25m</span>
+		</div>
+
+		<div class="conv-item" data-name="Feras Fayyat" data-avatar="images/HH-4.jpg">
+			<div class="online"><img src="images/HH-4.jpg"></div>
+			<div class="conv-text">
+				<strong>Feras Fayyat</strong>
+				<p>Recevied: We should plan another shoot soon</p>
+			</div>
+			<span class="conv-time">1h</span>
+		</div>
+
+		<div class="conv-item" data-name="Cozy Rider" data-avatar="images/HH-1.jpg">
+			<div class="online offline"><img src="images/HH-1.jpg"></div>
+			<div class="conv-text">
+				<strong>Cozy Rider</strong>
+				<p>You: i went into accident and got out safe</p>
+			</div>
+			<span class="conv-time">3h</span>
+		</div>
+
+		<div class="conv-item" data-name="RIFA Robotics Club" data-avatar="images/member-5.png">
+			<div class="online offline"><img src="images/member-5.png"></div>
+			<div class="conv-text">
+				<strong>RIFA Robotics Club</strong>
+				<p>You: Got it, see everyone there</p>
+			</div>
+			<span class="conv-time">1d</span>
+		</div>
+	</aside>
+
+	<!-- ACTIVE CHAT -->
+	<main class="chat-panel">
+		<div class="chat-header">
+			<img src="images/HH-2.jpg" id="chatAvatar">
+			<div>
+				<strong id="chatName">Hamza Saleh</strong>
+				<span class="chat-status">Active now</span>
+			</div>
+		</div>
+
+		<div class="chat-messages" id="chatMessages">
+			<div class="bubble received">Hey! Are we still on for the Flutter course event on the 5th?</div>
+			<div class="bubble sent">Yeah for sure, wouldn't miss it 🙌</div>
+			<div class="bubble received">Perfect — I'll bring my laptop, we can pair on the workshop exercises</div>
+			<div class="bubble sent">Sounds good, see you there 👍</div>
+		</div>
+
+		<div class="chat-input-row">
+			<input type="text" id="chatInput" placeholder="Type a message...">
+			<button id="chatSendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+		</div>
+	</main>
+
+</div>
+
+<div class="footer">
+	<p>&copy; 2026 ConnectHub — Built by Ahmad Ali</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

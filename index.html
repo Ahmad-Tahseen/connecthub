@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ConnectHub</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+
+	<div class="nav-left">
+
+		<a href="index.html" class="logo-text">Connect<span>Hub</span></a>
+
+		<ul>
+			<li class="notif-wrap">
+				<button class="icon-btn" onclick="notifMenuToggle()" aria-label="Notifications">
+					<i class="fa-solid fa-bell"></i>
+					<span class="notif-badge">3</span>
+				</button>
+				<div class="notif-menu" id="notif-menu">
+					<div class="notif-menu-header"><strong>Notifications</strong></div>
+					<a href="#" class="notif-item">
+						<img src="images/HH-2.jpg">
+						<div><p><b>Hamza Saleh</b> liked your post</p><span>5m ago</span></div>
+					</a>
+					<a href="#" class="notif-item">
+						<img src="images/HH-3.jpg">
+						<div><p><b>H1mmam Alaghbar</b> commented: "🔥🔥"</p><span>1h ago</span></div>
+					</a>
+					<a href="#" class="notif-item">
+						<img src="images/HH-4.jpg">
+						<div><p><b>Feras Fayyat</b> tagged you in a photo</p><span>3h ago</span></div>
+					</a>
+					<a href="#" class="notif-item">
+						<i class="fa-solid fa-calendar-day notif-icon"></i>
+						<div><p>Reminder: <b>Flutter Course</b> event is in 2 days</p><span>1d ago</span></div>
+					</a>
+				</div>
+			</li>
+			<li><a href="messages.html" class="icon-btn" aria-label="Messages"><i class="fa-regular fa-message"></i></a></li>
+			<li><a href="#" class="icon-btn" aria-label="Watch"><i class="fa-solid fa-video"></i></a></li>
+		</ul>
+
+	</div>
+
+	<div class="nav-right">
+
+      <div class="search-box">
+      	<i class="fa-solid fa-magnifying-glass"></i>
+      	<input type="text" id="searchInput" placeholder="Search ConnectHub">
+      	<div class="search-results" id="searchResults"></div>
+	</div>
+
+	<div class="nav-user-icon online" onclick="settingsMenuToggle()">
+		<img src="images/HH.jpg">
+	</div>
+<!---------------settings-menu---------------------->
+	<div class="settings-menu">
+
+		<div id="dark-btn">
+			<span></span>
+		</div>
+
+		<div class="settings-menu-inner">
+			<div class="user-profile">
+			<img src="images/HH.jpg">
+			<div>
+				<p>Ahmad Ali</p>
+				<a href="profile.html">See your profile</a>
+			</div>
+		</div>
+		<hr>
+		<div class="user-profile">
+			<img src="images/feedback.png">
+			<div>
+				<p>Give Feedback</p>
+				<a href="#">Help us to improve the new design</a>
+			  </div>
+		  </div>
+		  <hr>
+
+		  <div class="settings-links">
+		  	<i class="fa-solid fa-gear settings-icon"></i>
+		  	<a href="#">Settings &amp; Privacy <i class="fa-solid fa-chevron-right"></i></a>
+		  </div>
+		  <div class="settings-links">
+		  	<i class="fa-solid fa-circle-question settings-icon"></i>
+		  	<a href="#">Help &amp; Support <i class="fa-solid fa-chevron-right"></i></a>
+		  </div>
+		  <div class="settings-links">
+		  	<i class="fa-solid fa-display settings-icon"></i>
+		  	<a href="#">Display &amp; Accessibility <i class="fa-solid fa-chevron-right"></i></a>
+		  </div>
+		  <div class="settings-links">
+		  	<i class="fa-solid fa-arrow-right-from-bracket settings-icon"></i>
+		  	<a href="#">Logout <i class="fa-solid fa-chevron-right"></i></a>
+		  </div>
+
+	   </div>
+
+	</div>
+
+	</div><!-- /.nav-right -->
+
+</nav>
+
+<div class="container">
+
+<!----left-sidebar----------->
+<div class="left-sidebar">
+	<div class="imp-links">
+		<a href="#"><i class="fa-solid fa-newspaper"></i> Latest News</a>
+		<a href="profile.html#friends"><i class="fa-solid fa-user-group"></i> Friends</a>
+		<a href="#"><i class="fa-solid fa-people-roof"></i> Group</a>
+		<a href="#"><i class="fa-solid fa-store"></i> Marketplace</a>
+		<a href="#"><i class="fa-solid fa-clapperboard"></i> Watch</a>
+		<a href="#">See More</a>
+	</div>
+
+    <div class="shortcut-links">
+    	<p>Your shortcuts</p>
+    	<a href="#"><img src="images/SC-1.jpeg"> Database Management</a>
+    	<a href="#"><img src="images/SC-2.jpeg"> UI/UX Design</a>
+    	<a href="#"><img src="images/SC-3.jpeg"> HTML/CSS Course</a>
+    	<a href="#"><img src="images/SC-4.jpg"> Test Manager</a>
+    </div>
+</div>
+
+<!----main-content----------->
+<div class="main-content">
+
+	<div class="story-gallery">
+		<div class="story story1">
+			<i class="fa-solid fa-circle-plus story-add-icon"></i>
+			<p>Post Story</p>
+		</div>
+		<div class="story story2">
+			<img src="images/HH-1.jpg">
+			<p>Cozy</p>
+		</div>
+		<div class="story story3">
+			<img src="images/HH-2.jpg">
+			<p>Hamza</p>
+		</div>
+		<div class="story story4">
+			<img src="images/HH-3.jpg">
+			<p>H1mmam</p>
+		</div>	
+		<div class="story story5">
+			<img src="images/HH-4.jpg">
+			<p>Feras</p>
+		</div>
+	</div>
+
+	<div class="write-post-container">
+		<div class="user-profile">
+			<img src="images/HH.jpg">
+			<div>
+				<p>Ahmad Ali</p>
+				<small>Public <i class="fa-solid fa-caret-down"></i></small>
+			</div>
+		</div>
+		<div class="post-input-container">
+			<textarea rows="3" id="postInput" placeholder="What's on your mind, Ahmad"></textarea>
+			<div class="add-post-links">
+				<a href="#"><i class="fa-solid fa-video"></i> Live Video</a>
+				<a href="#"><i class="fa-solid fa-image"></i> Photo/Video</a>
+				<a href="#"><i class="fa-regular fa-face-smile"></i> Feeling/Activity</a>
+				<button id="postBtn" class="post-submit-btn">Post</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="postsFeed">
+	<!--------post-1------------------------------------------------------------------------------------------------>
+	<div class="post-container">
+		<div class="post-row">
+			<div class="user-profile">
+			<img src="images/HH.jpg">
+			  <div>
+				 <p>Ahmad Ali</p>
+				 <span>June 24 2025, 14:44 pm</span>
+			  </div>
+		    </div>
+		    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+		</div>
+		
+		<p class="post-text">Between <span>thoughts and dreams</span> i stayed in the middle looking at things i never imagined i would look at . . . <a href="#">#Turkey</a> <a href="#">#InTheMiddleOfRiver</a> </p>
+		<img src="images/P1.jpg" class="post-img">
+
+		<div class="post-row">
+			<div class="activity-icons">
+				<button class="like-btn"><i class="fa-regular fa-thumbs-up"></i> 7K</button>
+				<div><i class="fa-regular fa-comment"></i> 133</div>
+				<div><i class="fa-solid fa-share"></i> 56</div>
+			</div>
+			<div class="post-profile-icon">
+				<img src="images/HH.jpg"> <i class="fa-solid fa-caret-down"></i>
+			</div>
+		</div>
+	</div>
+	<!--------post-2------------------------------------------------------------------------------------------------>
+	<div class="post-container">
+		<div class="post-row">
+			<div class="user-profile">
+			<img src="images/HH-1.jpg">
+			  <div>
+				 <p>Cozy Rider</p>
+				 <span>July 26 2025, 12:22 pm</span>
+			  </div>
+		    </div>
+		    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+		</div>
+		
+		<p class="post-text">Walking around the streets, Looking for something. <a href="#">#Jordan</a> <a href="#">#DownTown</a> </p>
+		<img src="images/P2.jpg" class="post-img">
+
+		<div class="post-row">
+			<div class="activity-icons">
+				<button class="like-btn liked"><i class="fa-solid fa-thumbs-up"></i> 535</button>
+				<div><i class="fa-regular fa-comment"></i> 76</div>
+				<div><i class="fa-solid fa-share"></i> 35</div>
+			</div>
+			<div class="post-profile-icon">
+				<img src="images/HH-1.jpg"> <i class="fa-solid fa-caret-down"></i>
+			</div>
+		</div>
+	</div>
+	<!--------post-3------------------------------------------------------------------------------------------------>
+	<div class="post-container">
+		<div class="post-row">
+			<div class="user-profile">
+			<img src="images/HH-2.jpg">
+			  <div>
+				 <p>Hamza Saleh</p>
+				 <span>Dec 22 2025, 04:56 pm</span>
+			  </div>
+		    </div>
+		    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+		</div>
+		
+		<p class="post-text">Fishing in the best spot you can find here :D. <a href="#">#Turkey</a> <a href="#">#Fishing</a> </p>
+		<img src="images/P3.jpg" class="post-img">
+
+		<div class="post-row">
+			<div class="activity-icons">
+				<button class="like-btn liked"><i class="fa-solid fa-thumbs-up"></i> 335</button>
+				<div><i class="fa-regular fa-comment"></i> 22</div>
+				<div><i class="fa-solid fa-share"></i> 11</div>
+			</div>
+			<div class="post-profile-icon">
+				<img src="images/HH-2.jpg"> <i class="fa-solid fa-caret-down"></i>
+			</div>
+		</div>
+	</div>
+	<!--------post-4 (Video / iframe demo)------------------------------------------------------------------------->
+	<div class="post-container">
+		<div class="post-row">
+			<div class="user-profile">
+			<img src="images/HH-3.jpg">
+			  <div>
+				 <p>H1mmam alaghbar</p>
+				 <span>Oct 11 2025, 17:13 am</span>
+			  </div>
+		    </div>
+		    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+		</div>
+		
+		<p class="post-text">Started Learning Coding <a href="#">#OpenSource</a> <a href="#">#CreativeCommons</a></p>
+		<div class="post-video-wrap">
+			<iframe src="https://www.youtube-nocookie.com/embed/LfkBOKwsTc0" title="Embedded video post" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		<div class="post-row">
+			<div class="activity-icons">
+				<button class="like-btn"><i class="fa-regular fa-thumbs-up"></i> 476</button>
+				<div><i class="fa-regular fa-comment"></i> 30</div>
+				<div><i class="fa-solid fa-share"></i> 15</div>
+			</div>
+			<div class="post-profile-icon">
+				<img src="images/HH-3.jpg"> <i class="fa-solid fa-caret-down"></i>
+			</div>
+		</div>
+	</div>
+	<!--------post-5------------------------------------------------------------------------------------------------>
+	<div class="post-container">
+		<div class="post-row">
+			<div class="user-profile">
+			<img src="images/HH-4.jpg">
+			  <div>
+				 <p>Feras Fayyat</p>
+				 <span>Dec 28 2025, 11:11 pm</span>
+			  </div>
+		    </div>
+		    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+		</div>
+		
+		<p class="post-text">You can find happiness in the little things. <a href="#">#Photography</a> <a href="#">#Happiness</a> </p>
+		<img src="images/P5.jpg" class="post-img">
+
+		<div class="post-row">
+			<div class="activity-icons">
+				<button class="like-btn liked"><i class="fa-solid fa-thumbs-up"></i> 2K</button>
+				<div><i class="fa-regular fa-comment"></i> 128</div>
+				<div><i class="fa-solid fa-share"></i> 14</div>
+			</div>
+			<div class="post-profile-icon">
+				<img src="images/HH-4.jpg"> <i class="fa-solid fa-caret-down"></i>
+			</div>
+		</div>
+	</div>
+	</div><!-- /#postsFeed -->
+
+	<button type="button" id="loadMoreBtn" class="load-more-btn">Load More</button>
+
+</div>
+
+<!----right-sidebar----------->
+<div class="right-sidebar">
+	
+ <div class="sidebar-title">
+	<h4>Events</h4>
+	<a href="#">See All</a>
+ </div>
+ <div class="event">
+	<div class="left-event">
+		<h3>5</h3>
+		<span>July</span>
+	</div>
+	<div class="right-event">
+		<h4>Flutter Course</h4>
+		<p><i class="fa-solid fa-location-dot"></i> Ma'an, Traffic-light</p>
+		<a href="#">More Info</a>
+	</div>
+ </div>
+ <div class="event">
+	<div class="left-event">
+		<h3>7</h3>
+		<span>August</span>
+	</div>
+	<div class="right-event">
+		<h4>Fullstack Development</h4>	
+		<p><i class="fa-solid fa-location-dot"></i> Ma'an, Traffic-light</p>
+		<a href="#">More Info</a>
+	</div>
+ </div>
+ <div class="sidebar-title">
+	<h4>Advertisement</h4>
+	<a href="#">Close</a>
+ </div>
+  <img src="images/advertisement.png" class="sidebar-ads">
+
+ <div class="sidebar-title">
+	<h4>Conversation</h4>
+	<a href="messages.html">Open Chat</a>
+ </div>
+
+<a class="online-list" href="messages.html">
+	<div class="online">
+		<img src="images/HH-2.jpg">
+	</div>
+	<p>Hamza Saleh</p>
+</a>
+<a class="online-list" href="messages.html">
+	<div class="online">
+		<img src="images/HH-3.jpg">
+	</div>
+	<p>H1mmam Alaghbar</p>
+</a>
+<a class="online-list" href="messages.html">
+	<div class="online">
+		<img src="images/HH-4.jpg">
+	</div>
+	<p>Feras Fayyat</p>
+</a>
+
+ </div>
+</div>
+
+<div class="footer">
+	<p>&copy; 2026 ConnectHub — Built by Ahmad Ali</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

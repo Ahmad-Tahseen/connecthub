@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ahmad Ali — ConnectHub</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+	<div class="nav-left">
+		<a href="index.html" class="logo-text">Connect<span>Hub</span></a>
+		<ul>
+			<li><a href="index.html" class="icon-btn" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+			<li><a href="messages.html" class="icon-btn" aria-label="Messages"><i class="fa-regular fa-message"></i></a></li>
+		</ul>
+	</div>
+	<div class="nav-right">
+      <div class="search-box">
+      	<i class="fa-solid fa-magnifying-glass"></i>
+      	<input type="text" placeholder="Search ConnectHub">
+	  </div>
+	  <a href="index.html" class="nav-user-icon online"><img src="images/HH.jpg"></a>
+	</div>
+</nav>
+
+<!-- ============== PROFILE HEADER ============== -->
+<div class="profile-header">
+	<div class="profile-cover" style="background-image:url('images/cover.png')">
+		<img src="images/HH.jpg" class="profile-pic">
+	</div>
+	<div class="profile-meta">
+		<div>
+			<h2>Ahmad Ali</h2>
+			<p class="profile-tagline">Software Engineering Student · Al-Hussien Bin Talal University</p>
+			<div class="profile-stats">
+				<span><strong>248</strong> Friends</span>
+				<span><strong>56</strong> Photos</span>
+				<span><strong>12</strong> Groups</span>
+			</div>
+		</div>
+		<button class="profile-edit-btn"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+	</div>
+
+	<div class="profile-tabs">
+		<button class="tab-btn active" data-tab="posts">Posts</button>
+		<button class="tab-btn" data-tab="about">About</button>
+		<button class="tab-btn" data-tab="friends">Friends</button>
+		<button class="tab-btn" data-tab="photos">Photos</button>
+	</div>
+</div>
+
+<div class="container profile-container">
+
+	<!-- LEFT: Intro card (visible on Posts tab) -->
+	<div class="left-sidebar">
+		<div class="card-box">
+			<h4>Intro</h4>
+			<p class="intro-line"><i class="fa-solid fa-graduation-cap"></i> Studying Software Engineering at Al-Hussien Bin Talal University</p>
+			<p class="intro-line"><i class="fa-solid fa-location-dot"></i> Lives in Ma'an, Jordan</p>
+			<p class="intro-line"><i class="fa-solid fa-house"></i> From Amman, Jordan</p>
+			<p class="intro-line"><i class="fa-solid fa-robot"></i> Member, RIFA Robotics Club</p>
+		</div>
+	</div>
+
+	<!-- CENTER: Tab Panels -->
+	<div class="main-content">
+
+		<!-- POSTS TAB -->
+		<section class="tab-panel" id="tab-posts">
+			<div class="post-container">
+				<div class="post-row">
+					<div class="user-profile">
+						<img src="images/HH.jpg">
+						<div><p>Ahmad Ali</p><span>June 24 2025, 14:44 pm</span></div>
+					</div>
+				</div>
+				<p class="post-text">Between <span>thoughts and dreams</span> i stayed in the middle looking at things i never imagined i would look at . . .</p>
+				<img src="images/P1.jpg" class="post-img">
+			</div>
+			<div class="post-container">
+				<div class="post-row">
+					<div class="user-profile">
+						<img src="images/HH.jpg">
+						<div><p>Ahmad Ali</p><span>May 2 2025, 09:10 am</span></div>
+					</div>
+				</div>
+				<p class="post-text">Wrapped up another semester project — full ER diagram, normalization, and SQL implementation. Database systems just clicked for me this term. <a href="#">#SoftwareEngineering</a></p>
+			</div>
+		</section>
+
+		<!-- ABOUT TAB -->
+		<section class="tab-panel hidden" id="tab-about">
+			<div class="card-box">
+				<h4>About</h4>
+				<p class="intro-line"><i class="fa-solid fa-graduation-cap"></i> Software Engineering, Al-Hussien Bin Talal University — Expected 2027</p>
+				<p class="intro-line"><i class="fa-solid fa-certificate"></i> HCIA-AI V4.0 — Huawei ICT Academy</p>
+				<p class="intro-line"><i class="fa-solid fa-location-dot"></i> Lives in Ma'an, Jordan</p>
+				<p class="intro-line"><i class="fa-solid fa-envelope"></i> ahmadtahse0en@gmail.com</p>
+			</div>
+			<div class="card-box">
+				<h4>Location</h4>
+				<div class="map-embed-wrap">
+					<iframe
+						src="https://maps.google.com/maps?q=Maan%2C%20Jordan&t=&z=11&ie=UTF8&iwloc=&output=embed"
+						title="Ma'an, Jordan map"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- FRIENDS TAB -->
+		<section class="tab-panel hidden" id="tab-friends">
+			<div class="card-box">
+				<h4>Friends · 248</h4>
+				<div class="friends-grid">
+					<div class="friend-card"><img src="images/HH-1.jpg"><p>Cozy Rider</p></div>
+					<div class="friend-card"><img src="images/HH-2.jpg"><p>Hamza Saleh</p></div>
+					<div class="friend-card"><img src="images/HH-3.jpg"><p>H1mmam Alaghbar</p></div>
+					<div class="friend-card"><img src="images/HH-4.jpg"><p>Feras Fayyat</p></div>
+					<div class="friend-card"><img src="images/member-1.png"><p>Lina Odeh</p></div>
+					<div class="friend-card"><img src="images/member-2.png"><p>Khalid Rawashdeh</p></div>
+					<div class="friend-card"><img src="images/member-3.png"><p>Noor Tamimi</p></div>
+					<div class="friend-card"><img src="images/member-4.png"><p>Dina Saleh</p></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PHOTOS TAB -->
+		<section class="tab-panel hidden" id="tab-photos">
+			<div class="card-box">
+				<h4>Photos · 56</h4>
+				<div class="photos-grid">
+					<img src="images/P1.jpg">
+					<img src="images/P2.jpg">
+					<img src="images/P3.jpg">
+					<img src="images/P4.jpg">
+					<img src="images/P5.jpg">
+					<img src="images/feed-image-1.png">
+					<img src="images/feed-image-2.png">
+					<img src="images/feed-image-3.png">
+					<img src="images/feed-image-4.png">
+					<img src="images/feed-image-5.png">
+					<img src="images/photo1.png">
+					<img src="images/photo2.png">
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<div class="footer">
+	<p>&copy; 2026 ConnectHub — Built by Ahmad Ali</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
