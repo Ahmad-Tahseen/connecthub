@@ -2,6 +2,8 @@
 
 A multi-page, fully responsive social-media frontend — built with vanilla HTML, CSS, and JavaScript (no frameworks). What started as a single-page UI-cloning exercise was extended into a 3-page application with real navigation, live interactivity, dark mode, and practical iframe embeds.
 
+> Live demo: https://ahmad-tahseen.github.io/connecthub
+
 > Personal frontend project — originally inspired by mainstream social-platform UI patterns, then rebuilt and extended with original branding, additional pages, and new features.
 
 ## Pages
